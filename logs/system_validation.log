@@ -1,0 +1,349 @@
+2025-10-27 15:24:17,498 - ERROR - Real-time data test failed: 'RealTimeDataConnector' object has no attribute 'check_connection'
+2025-10-27 15:24:17,503 - ERROR - Data collector test failed: 'HistoricalDataCollector' object has no attribute 'collect_historical_data'
+2025-10-27 15:24:17,509 - ERROR - AI trainer test failed: 'RealDataAITrainer' object has no attribute 'check_models_health'
+2025-10-27 15:24:17,557 - ERROR - Backtester test failed: 'BacktestingFramework' object has no attribute 'run_backtest'
+2025-10-27 15:24:17,562 - ERROR - Risk manager test failed: RiskManager.calculate_position_size() got an unexpected keyword argument 'capital'
+2025-10-27 15:24:17,564 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 15:24:17,583 - ERROR - Data flow integration test failed: 'HistoricalDataCollector' object has no attribute 'collect_historical_data'
+2025-10-27 15:24:17,585 - ERROR - Risk integration test failed: RiskManager.calculate_position_size() got an unexpected keyword argument 'capital'
+2025-10-27 15:24:17,590 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 15:24:17,590 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 15:24:17,596 - ERROR - Performance test failed: 'HistoricalDataCollector' object has no attribute 'collect_historical_data'
+2025-10-27 15:27:01,834 - ERROR - Real-time data test failed: 'RealTimeDataConnector' object has no attribute 'get_recent_prices'
+2025-10-27 15:27:01,834 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 15:27:01,853 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 15:27:01,853 - ERROR - AI trainer test failed: 'RealDataAITrainer' object has no attribute 'predict'
+2025-10-27 15:27:01,878 - INFO - Starting AI model backtest for BTCUSDT
+2025-10-27 15:27:01,880 - INFO - Collecting comprehensive dataset for BTCUSDT
+2025-10-27 15:27:01,880 - INFO - Collecting 455 days of BTCUSDT data from Binance
+2025-10-27 15:27:02,120 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:02,439 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:02,781 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:03,105 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:03,607 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:03,911 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:04,253 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:04,596 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:04,944 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:05,252 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:05,557 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=919.9999999999993
+2025-10-27 15:27:05,628 - INFO - Saved 1003 data points to data\raw\BTCUSDT_1h_455d_raw.csv
+2025-10-27 15:27:05,628 - INFO - Preprocessing data for BTCUSDT
+2025-10-27 15:27:05,764 - INFO - Preprocessed data shape: (930, 42)
+2025-10-27 15:27:05,906 - INFO - Comprehensive dataset ready: (930, 42)
+2025-10-27 15:27:05,912 - INFO - Training on 0 samples, testing on 930 samples
+2025-10-27 15:27:05,914 - INFO - Starting ensemble model training
+2025-10-27 15:27:05,914 - INFO - Preparing training data for BTCUSDT
+2025-10-27 15:27:05,914 - INFO - Collecting comprehensive dataset for BTCUSDT
+2025-10-27 15:27:05,914 - INFO - Collecting 365 days of BTCUSDT data from Binance
+2025-10-27 15:27:06,135 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:06,452 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:06,886 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:07,219 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:07,537 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:07,906 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:08,258 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:08,588 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:27:08,877 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=760.0000000000002
+2025-10-27 15:27:08,913 - INFO - Saved 1003 data points to data\raw\BTCUSDT_1h_365d_raw.csv
+2025-10-27 15:27:08,913 - INFO - Preprocessing data for BTCUSDT
+2025-10-27 15:27:08,975 - INFO - Preprocessed data shape: (930, 42)
+2025-10-27 15:27:09,128 - INFO - Comprehensive dataset ready: (930, 42)
+2025-10-27 15:27:09,129 - INFO - Using 32 features: ['open', 'high', 'low', 'close', 'volume', 'returns', 'log_returns', 'sma_5', 'sma_10', 'sma_20', 'sma_50', 'ema_5', 'ema_10', 'ema_20', 'ema_50', 'rsi_14', 'macd', 'macd_signal', 'macd_hist', 'bb_middle', 'bb_upper', 'bb_lower', 'bb_width', 'stoch_k', 'stoch_d', 'atr_14', 'volume_sma_20', 'volume_ratio', 'price_range', 'hour', 'day_of_week', 'month']
+2025-10-27 15:27:09,152 - INFO - Training data shape: X=(721, 24, 32), y_direction=(721,), y_return=(721,)
+2025-10-27 15:27:09,153 - INFO - Testing data shape: X=(181, 24, 32), y_direction=(181,), y_return=(181,)
+2025-10-27 15:27:09,153 - INFO - Training lstm_direction model
+2025-10-27 15:27:10,842 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-27 15:27:13,372 - INFO - Built direction LSTM model with input shape (24, 32)
+2025-10-27 15:27:16,602 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2025-10-27 15:27:21,772 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-27 15:28:17,136 - INFO - Saved lstm_direction model to data/models/lstm_direction_BTCUSDT_20251027_152816.h5
+2025-10-27 15:28:17,137 - INFO - Training gru_direction model
+2025-10-27 15:28:19,102 - INFO - Built direction GRU model with input shape (24, 32)
+2025-10-27 15:29:02,263 - INFO - Saved gru_direction model to data/models/gru_direction_BTCUSDT_20251027_152902.h5
+2025-10-27 15:29:02,263 - INFO - Training cnn_lstm_direction model
+2025-10-27 15:29:02,735 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:6642: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-10-27 15:29:04,136 - INFO - Built direction CNN-LSTM model with input shape (24, 32)
+2025-10-27 15:29:44,138 - INFO - Saved cnn_lstm_direction model to data/models/cnn_lstm_direction_BTCUSDT_20251027_152943.h5
+2025-10-27 15:29:44,144 - INFO - Saved training results to data/models/training_results_BTCUSDT_20251027_152944.json
+2025-10-27 15:33:12,881 - ERROR - Error running AI model backtest: index 0 is out of bounds for axis 0 with size 0
+2025-10-27 15:33:12,915 - ERROR - Risk manager test failed: 'RiskManager' object has no attribute 'calculate_var'
+2025-10-27 15:33:12,919 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 15:33:12,948 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 15:33:12,955 - ERROR - Risk integration test failed: unsupported operand type(s) for /: 'tuple' and 'int'
+2025-10-27 15:33:12,956 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 15:33:12,957 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 15:33:12,962 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 15:58:18,548 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 15:58:18,559 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 15:58:18,565 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 15:58:18,699 - INFO - Starting AI model backtest for BTCUSDT
+2025-10-27 15:58:18,699 - INFO - Collecting comprehensive dataset for BTCUSDT
+2025-10-27 15:58:18,701 - INFO - Collecting 455 days of BTCUSDT data from Binance
+2025-10-27 15:58:19,065 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:19,488 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:19,846 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:20,355 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:20,715 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:21,149 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:21,539 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:22,162 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:22,810 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:23,411 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:23,698 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=919.9999999999993
+2025-10-27 15:58:23,766 - INFO - Saved 1008 data points to data\raw\BTCUSDT_1h_455d_raw.csv
+2025-10-27 15:58:23,771 - INFO - Preprocessing data for BTCUSDT
+2025-10-27 15:58:23,973 - INFO - Preprocessed data shape: (935, 42)
+2025-10-27 15:58:24,158 - INFO - Comprehensive dataset ready: (935, 42)
+2025-10-27 15:58:24,166 - INFO - Training on 0 samples, testing on 935 samples
+2025-10-27 15:58:24,166 - INFO - Starting ensemble model training
+2025-10-27 15:58:24,167 - INFO - Preparing training data for BTCUSDT
+2025-10-27 15:58:24,167 - INFO - Collecting comprehensive dataset for BTCUSDT
+2025-10-27 15:58:24,168 - INFO - Collecting 365 days of BTCUSDT data from Binance
+2025-10-27 15:58:24,404 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:24,774 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:25,205 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:25,580 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:25,941 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:26,279 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:26,638 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:27,020 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-27 15:58:27,382 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=760.0000000000002
+2025-10-27 15:58:27,427 - INFO - Saved 1005 data points to data\raw\BTCUSDT_1h_365d_raw.csv
+2025-10-27 15:58:27,429 - INFO - Preprocessing data for BTCUSDT
+2025-10-27 15:58:27,546 - INFO - Preprocessed data shape: (932, 42)
+2025-10-27 15:58:27,744 - INFO - Comprehensive dataset ready: (932, 42)
+2025-10-27 15:58:27,744 - INFO - Using 32 features: ['open', 'high', 'low', 'close', 'volume', 'returns', 'log_returns', 'sma_5', 'sma_10', 'sma_20', 'sma_50', 'ema_5', 'ema_10', 'ema_20', 'ema_50', 'rsi_14', 'macd', 'macd_signal', 'macd_hist', 'bb_middle', 'bb_upper', 'bb_lower', 'bb_width', 'stoch_k', 'stoch_d', 'atr_14', 'volume_sma_20', 'volume_ratio', 'price_range', 'hour', 'day_of_week', 'month']
+2025-10-27 15:58:27,769 - INFO - Training data shape: X=(723, 24, 32), y_direction=(723,), y_return=(723,)
+2025-10-27 15:58:27,769 - INFO - Testing data shape: X=(181, 24, 32), y_direction=(181,), y_return=(181,)
+2025-10-27 15:58:27,771 - INFO - Training lstm_direction model
+2025-10-27 15:58:29,878 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-27 15:58:33,708 - INFO - Built direction LSTM model with input shape (24, 32)
+2025-10-27 15:58:38,673 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2025-10-27 15:58:49,700 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-27 16:00:00,752 - INFO - Saved lstm_direction model to data/models/lstm_direction_BTCUSDT_20251027_155959.h5
+2025-10-27 16:00:00,756 - INFO - Training gru_direction model
+2025-10-27 16:00:03,799 - INFO - Built direction GRU model with input shape (24, 32)
+2025-10-27 16:01:08,940 - INFO - Saved gru_direction model to data/models/gru_direction_BTCUSDT_20251027_160108.h5
+2025-10-27 16:01:08,940 - INFO - Training cnn_lstm_direction model
+2025-10-27 16:01:09,499 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:6642: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-10-27 16:01:10,868 - INFO - Built direction CNN-LSTM model with input shape (24, 32)
+2025-10-27 16:02:04,308 - INFO - Saved cnn_lstm_direction model to data/models/cnn_lstm_direction_BTCUSDT_20251027_160204.h5
+2025-10-27 16:02:04,315 - INFO - Saved training results to data/models/training_results_BTCUSDT_20251027_160204.json
+2025-10-27 16:05:56,007 - ERROR - Error running AI model backtest: index 0 is out of bounds for axis 0 with size 0
+2025-10-27 16:05:56,544 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 16:05:56,553 - ERROR - Risk manager test failed: 'RiskManager' object has no attribute 'check_health'
+2025-10-27 16:05:56,587 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 16:05:56,944 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 16:05:56,952 - ERROR - Risk integration test failed: unsupported operand type(s) for /: 'tuple' and 'int'
+2025-10-27 16:05:56,973 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 16:05:56,974 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 16:05:57,122 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 16:13:02,431 - INFO - No real-time data for BTCUSDT, fetching historical data
+2025-10-27 16:13:02,644 - INFO - Retrieved 10 historical data points for BTCUSDT
+2025-10-27 16:13:02,675 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 16:13:02,680 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:13:02,685 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:13:02,685 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:13:02,887 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 16:13:02,888 - ERROR - Risk manager test failed: '>' not supported between instances of 'tuple' and 'int'
+2025-10-27 16:13:02,892 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 16:13:02,961 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 16:13:02,970 - ERROR - Risk integration test failed: 'RiskManager' object has no attribute 'assess_portfolio_risk'
+2025-10-27 16:13:02,977 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 16:13:02,979 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 16:13:03,011 - ERROR - Error collecting historical data for BTCUSDT: HistoricalDataCollector.collect_binance_data() takes from 1 to 4 positional arguments but 5 were given
+2025-10-27 16:16:00,050 - INFO - No real-time data for BTCUSDT, fetching historical data
+2025-10-27 16:16:00,263 - INFO - Retrieved 10 historical data points for BTCUSDT
+2025-10-27 16:16:00,290 - INFO - Collecting 7 days of BTCUSDT data from Binance
+2025-10-27 16:16:00,477 - INFO - Retrieved 168 historical data points for BTCUSDT
+2025-10-27 16:16:00,609 - INFO - Saved 168 data points to data\raw\BTCUSDT_1h_7d_raw.csv
+2025-10-27 16:16:00,609 - ERROR - Data collector test failed: 'HistoricalDataCollector' object has no attribute 'calculate_technical_indicators'
+2025-10-27 16:16:00,613 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:16:00,615 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:16:00,615 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:16:00,679 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 16:16:00,684 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 16:16:00,718 - INFO - Collecting 30 days of BTCUSDT data from Binance
+2025-10-27 16:16:00,927 - INFO - Retrieved 720 historical data points for BTCUSDT
+2025-10-27 16:16:01,065 - INFO - Saved 720 data points to data\raw\BTCUSDT_1h_30d_raw.csv
+2025-10-27 16:16:01,065 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:16:01,068 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:16:01,095 - ERROR - Risk integration test failed: 'RiskManager' object has no attribute 'get_stop_loss_price'
+2025-10-27 16:16:01,095 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 16:16:01,095 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 16:16:01,101 - INFO - Collecting 1 days of BTCUSDT data from Binance
+2025-10-27 16:16:01,294 - INFO - Retrieved 24 historical data points for BTCUSDT
+2025-10-27 16:16:01,417 - INFO - Saved 24 data points to data\raw\BTCUSDT_1h_1d_raw.csv
+2025-10-27 16:16:01,426 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:16:01,426 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:19:49,397 - INFO - No real-time data for BTCUSDT, fetching historical data
+2025-10-27 16:19:49,614 - INFO - Retrieved 10 historical data points for BTCUSDT
+2025-10-27 16:19:49,658 - INFO - Collecting 7 days of BTCUSDT data from Binance
+2025-10-27 16:19:49,862 - INFO - Retrieved 168 historical data points for BTCUSDT
+2025-10-27 16:19:49,991 - INFO - Saved 168 data points to data\raw\BTCUSDT_1h_7d_raw.csv
+2025-10-27 16:19:50,046 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:19:50,046 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:19:50,046 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:19:50,114 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 16:19:50,116 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 16:19:50,191 - INFO - Collecting 30 days of BTCUSDT data from Binance
+2025-10-27 16:19:50,404 - INFO - Retrieved 720 historical data points for BTCUSDT
+2025-10-27 16:19:50,537 - INFO - Saved 720 data points to data\raw\BTCUSDT_1h_30d_raw.csv
+2025-10-27 16:19:50,537 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:19:50,537 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:19:50,556 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 16:19:50,556 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 16:19:50,556 - INFO - Collecting 1 days of BTCUSDT data from Binance
+2025-10-27 16:19:50,749 - INFO - Retrieved 24 historical data points for BTCUSDT
+2025-10-27 16:19:50,876 - INFO - Saved 24 data points to data\raw\BTCUSDT_1h_1d_raw.csv
+2025-10-27 16:19:50,882 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:19:50,882 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:21:15,124 - INFO - No real-time data for BTCUSDT, fetching historical data
+2025-10-27 16:21:15,355 - INFO - Retrieved 10 historical data points for BTCUSDT
+2025-10-27 16:21:15,405 - INFO - Collecting 7 days of BTCUSDT data from Binance
+2025-10-27 16:21:15,625 - INFO - Retrieved 168 historical data points for BTCUSDT
+2025-10-27 16:21:15,753 - INFO - Saved 168 data points to data\raw\BTCUSDT_1h_7d_raw.csv
+2025-10-27 16:21:15,825 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:21:15,825 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:21:15,827 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:21:15,905 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 16:21:15,905 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 16:21:15,945 - INFO - Collecting 30 days of BTCUSDT data from Binance
+2025-10-27 16:21:16,356 - INFO - Retrieved 720 historical data points for BTCUSDT
+2025-10-27 16:21:16,490 - INFO - Saved 720 data points to data\raw\BTCUSDT_1h_30d_raw.csv
+2025-10-27 16:21:16,492 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:21:16,492 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 16:21:16,525 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 16:21:16,540 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 16:21:16,587 - INFO - Collecting 1 days of BTCUSDT data from Binance
+2025-10-27 16:21:16,770 - INFO - Retrieved 24 historical data points for BTCUSDT
+2025-10-27 16:21:16,890 - INFO - Saved 24 data points to data\raw\BTCUSDT_1h_1d_raw.csv
+2025-10-27 16:21:16,894 - ERROR - Error checking models health: 'RealDataAITrainer' object has no attribute 'models_dir'
+2025-10-27 16:21:16,896 - INFO - No trained models available, returning mock prediction for validation
+2025-10-27 17:19:22,472 - INFO - No real-time data for BTCUSDT, fetching historical data
+2025-10-27 17:19:22,748 - INFO - Retrieved 10 historical data points for BTCUSDT
+2025-10-27 17:19:22,830 - INFO - Collecting 7 days of BTCUSDT data from Binance
+2025-10-27 17:19:23,143 - INFO - Retrieved 168 historical data points for BTCUSDT
+2025-10-27 17:19:23,295 - INFO - Saved 168 data points to data\raw\BTCUSDT_1h_7d_raw.csv
+2025-10-27 17:19:25,696 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-27 17:19:26,128 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:6642: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-10-27 17:19:34,998 - ERROR - AI trainer test failed: name 'ai_trainer' is not defined
+2025-10-27 17:19:35,363 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 17:19:35,377 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 17:19:35,614 - INFO - Collecting 30 days of BTCUSDT data from Binance
+2025-10-27 17:19:36,132 - INFO - Retrieved 713 historical data points for BTCUSDT
+2025-10-27 17:19:36,495 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=7&startTime=1761562800000.0&endTime=1761585575612
+2025-10-27 17:19:36,548 - INFO - Saved 713 data points to data\raw\BTCUSDT_1h_30d_raw.csv
+2025-10-27 17:19:36,559 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 17:19:36,559 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 17:19:36,573 - INFO - Collecting 1 days of BTCUSDT data from Binance
+2025-10-27 17:19:36,810 - INFO - Retrieved 17 historical data points for BTCUSDT
+2025-10-27 17:19:37,113 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=7&startTime=1761562800000.0&endTime=1761585576565
+2025-10-27 17:19:37,129 - INFO - Saved 17 data points to data\raw\BTCUSDT_1h_1d_raw.csv
+2025-10-27 17:19:45,330 - ERROR - Error generating prediction: 'RealDataAITrainer' object has no attribute 'prepare_prediction_data'
+2025-10-27 17:21:22,550 - INFO - No real-time data for BTCUSDT, fetching historical data
+2025-10-27 17:21:22,746 - INFO - Retrieved 10 historical data points for BTCUSDT
+2025-10-27 17:21:22,780 - INFO - Collecting 7 days of BTCUSDT data from Binance
+2025-10-27 17:21:23,004 - INFO - Retrieved 168 historical data points for BTCUSDT
+2025-10-27 17:21:23,133 - INFO - Saved 168 data points to data\raw\BTCUSDT_1h_7d_raw.csv
+2025-10-27 17:21:24,695 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-27 17:21:25,036 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:6642: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-10-27 17:21:29,421 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 17:21:29,423 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 17:21:29,484 - INFO - Collecting comprehensive dataset for BTCUSDT
+2025-10-27 17:21:29,506 - INFO - Collecting 30 days of BTCUSDT data from Binance
+2025-10-27 17:21:29,732 - INFO - Retrieved 720 historical data points for BTCUSDT
+2025-10-27 17:21:29,879 - INFO - Saved 720 data points to data\raw\BTCUSDT_1h_30d_raw.csv
+2025-10-27 17:21:29,879 - INFO - Preprocessing data for BTCUSDT
+2025-10-27 17:21:29,954 - INFO - Preprocessed data shape: (647, 42)
+2025-10-27 17:21:30,061 - INFO - Comprehensive dataset ready: (647, 42)
+2025-10-27 17:21:30,064 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 17:21:30,064 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 17:21:30,078 - INFO - Collecting 1 days of BTCUSDT data from Binance
+2025-10-27 17:21:30,282 - INFO - Retrieved 17 historical data points for BTCUSDT
+2025-10-27 17:21:30,563 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=7&startTime=1761562800000.0&endTime=1761585690073
+2025-10-27 17:21:30,577 - INFO - Saved 17 data points to data\raw\BTCUSDT_1h_1d_raw.csv
+2025-10-27 17:21:34,204 - ERROR - Error generating prediction: 'RealDataAITrainer' object has no attribute 'prepare_prediction_data'
+2025-10-27 17:27:52,806 - INFO - No real-time data for BTCUSDT, fetching historical data
+2025-10-27 17:27:53,117 - INFO - Retrieved 10 historical data points for BTCUSDT
+2025-10-27 17:27:53,193 - INFO - Collecting 7 days of BTCUSDT data from Binance
+2025-10-27 17:27:53,446 - INFO - Retrieved 168 historical data points for BTCUSDT
+2025-10-27 17:27:53,597 - INFO - Saved 168 data points to data\raw\BTCUSDT_1h_7d_raw.csv
+2025-10-27 17:27:56,336 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-10-27 17:27:57,073 - WARNING - From D:\GitHub\BTCUSD-Trading-Ai\.venv\lib\site-packages\keras\src\backend.py:6642: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2025-10-27 17:28:06,107 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_163236.h5
+2025-10-27 17:28:07,959 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_164314.h5
+2025-10-27 17:28:09,509 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_165214.h5
+2025-10-27 17:28:11,335 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_165705.h5
+2025-10-27 17:28:13,100 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_165902.h5
+2025-10-27 17:28:14,892 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_170522.h5
+2025-10-27 17:28:17,596 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_170912.h5
+2025-10-27 17:28:20,341 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_163157.h5
+2025-10-27 17:28:22,256 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_164239.h5
+2025-10-27 17:28:24,381 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_165123.h5
+2025-10-27 17:28:27,489 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_165631.h5
+2025-10-27 17:28:31,517 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_165828.h5
+2025-10-27 17:28:34,826 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_170434.h5
+2025-10-27 17:28:37,653 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_170819.h5
+2025-10-27 17:28:40,564 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_163116.h5
+2025-10-27 17:28:42,523 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_164147.h5
+2025-10-27 17:28:45,013 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_165031.h5
+2025-10-27 17:28:46,775 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_165551.h5
+2025-10-27 17:28:48,760 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_165748.h5
+2025-10-27 17:28:50,526 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_170344.h5
+2025-10-27 17:28:52,724 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_170656.h5
+2025-10-27 17:28:52,726 - INFO - Successfully loaded 3 models
+2025-10-27 17:28:52,795 - ERROR - Error calculating VaR: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-10-27 17:28:52,796 - INFO - Capital updated: $1000.00 -> $1100.00 (10.00%) from test
+2025-10-27 17:28:53,049 - INFO - Collecting comprehensive dataset for BTCUSDT
+2025-10-27 17:28:53,051 - INFO - Collecting 30 days of BTCUSDT data from Binance
+2025-10-27 17:28:53,333 - INFO - Retrieved 720 historical data points for BTCUSDT
+2025-10-27 17:28:53,466 - INFO - Saved 720 data points to data\raw\BTCUSDT_1h_30d_raw.csv
+2025-10-27 17:28:53,466 - INFO - Preprocessing data for BTCUSDT
+2025-10-27 17:28:53,558 - INFO - Preprocessed data shape: (647, 42)
+2025-10-27 17:28:53,641 - INFO - Comprehensive dataset ready: (647, 42)
+2025-10-27 17:28:55,338 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_163236.h5
+2025-10-27 17:28:56,643 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_164314.h5
+2025-10-27 17:28:57,955 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_165214.h5
+2025-10-27 17:28:59,369 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_165705.h5
+2025-10-27 17:29:01,368 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_165902.h5
+2025-10-27 17:29:02,710 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_170522.h5
+2025-10-27 17:29:04,105 - INFO - Loaded model: cnn_lstm from cnn_lstm_direction_BTCUSDT_20251027_170912.h5
+2025-10-27 17:29:05,908 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_163157.h5
+2025-10-27 17:29:08,257 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_164239.h5
+2025-10-27 17:29:10,138 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_165123.h5
+2025-10-27 17:29:12,494 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_165631.h5
+2025-10-27 17:29:14,497 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_165828.h5
+2025-10-27 17:29:16,652 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_170434.h5
+2025-10-27 17:29:18,769 - INFO - Loaded model: gru_direction from gru_direction_BTCUSDT_20251027_170819.h5
+2025-10-27 17:29:21,485 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_163116.h5
+2025-10-27 17:29:23,419 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_164147.h5
+2025-10-27 17:29:25,477 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_165031.h5
+2025-10-27 17:29:27,402 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_165551.h5
+2025-10-27 17:29:29,213 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_165748.h5
+2025-10-27 17:29:31,274 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_170344.h5
+2025-10-27 17:29:33,064 - INFO - Loaded model: lstm_direction from lstm_direction_BTCUSDT_20251027_170656.h5
+2025-10-27 17:29:33,064 - INFO - Successfully loaded 3 models
+2025-10-27 17:29:33,082 - ERROR - Error generating trading signal: This StandardScaler instance is not fitted yet. Call 'fit' with appropriate arguments before using this estimator.
+2025-10-27 17:29:33,092 - INFO - Capital updated: $1000.00 -> $1200.00 (20.00%) from trading
+2025-10-27 17:29:33,092 - INFO - Compounding performed: $270.00 reinvested
+2025-10-27 17:29:33,106 - INFO - Collecting 1 days of BTCUSDT data from Binance
+2025-10-27 17:29:33,333 - INFO - Retrieved 17 historical data points for BTCUSDT
+2025-10-27 17:29:33,667 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=7&startTime=1761562800000.0&endTime=1761586173103
+2025-10-27 17:29:33,679 - INFO - Saved 17 data points to data\raw\BTCUSDT_1h_1d_raw.csv
+2025-10-27 17:29:37,552 - ERROR - Error generating prediction: 'RealDataAITrainer' object has no attribute 'prepare_prediction_data'

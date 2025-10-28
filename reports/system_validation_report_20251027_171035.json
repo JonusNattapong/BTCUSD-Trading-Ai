@@ -1,0 +1,85 @@
+{
+    "timestamp": "2025-10-27 17:10:05.306656",
+    "overall_status": "failed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "passed",
+            "connection": true,
+            "current_price": 115329.88,
+            "recent_prices_count": 10,
+            "error": null
+        },
+        "data_collector": {
+            "status": "passed",
+            "data_points": 168,
+            "indicators_calculated": true,
+            "error": null
+        },
+        "ai_trainer": {
+            "status": "passed",
+            "models_initialized": true,
+            "prediction_generated": false,
+            "error": null
+        },
+        "backtester": {
+            "status": "passed",
+            "backtest_completed": true,
+            "metrics_calculated": true,
+            "error": null
+        },
+        "risk_manager": {
+            "status": "passed",
+            "position_size_calculated": true,
+            "var_calculated": true,
+            "health_check_passed": true,
+            "error": null
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "failed",
+            "error": "AI prediction failed"
+        },
+        "risk_integration": {
+            "status": "passed",
+            "position_size": 250.0,
+            "risk_assessed": true,
+            "stop_loss_calculated": true,
+            "error": null
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "warning",
+        "response_times": {
+            "data_collection": 0.5429539680480957,
+            "ai_prediction": 4.534202814102173
+        },
+        "memory_usage": {},
+        "error_rates": {},
+        "recommendations": [
+            "Performance thresholds exceeded - consider optimization"
+        ]
+    },
+    "errors": [],
+    "recommendations": [
+        "Fix data_flow integration - AI prediction failed",
+        "Performance thresholds exceeded - consider optimization",
+        "Address all failed tests before production deployment",
+        "Consider additional testing in staging environment"
+    ]
+}

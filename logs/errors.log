@@ -1,0 +1,2 @@
+2025-10-28 09:29:51,320 - ERROR - Failed to initialize AI models: 'RealDataAITrainer' object has no attribute 'train_models'
+None

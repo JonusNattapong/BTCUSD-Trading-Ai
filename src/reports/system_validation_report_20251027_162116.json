@@ -1,0 +1,85 @@
+{
+    "timestamp": "2025-10-27 16:21:14.538978",
+    "overall_status": "passed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "passed",
+            "connection": true,
+            "current_price": 115138.97,
+            "recent_prices_count": 10,
+            "error": null
+        },
+        "data_collector": {
+            "status": "passed",
+            "data_points": 168,
+            "indicators_calculated": true,
+            "error": null
+        },
+        "ai_trainer": {
+            "status": "passed",
+            "models_initialized": false,
+            "prediction_generated": true,
+            "error": null
+        },
+        "backtester": {
+            "status": "passed",
+            "backtest_completed": true,
+            "metrics_calculated": true,
+            "error": null
+        },
+        "risk_manager": {
+            "status": "passed",
+            "position_size_calculated": true,
+            "var_calculated": true,
+            "health_check_passed": true,
+            "error": null
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "passed",
+            "data_collected": 720,
+            "ai_prediction": true,
+            "backtest_completed": true,
+            "error": null
+        },
+        "risk_integration": {
+            "status": "passed",
+            "position_size": 250.0,
+            "risk_assessed": true,
+            "stop_loss_calculated": true,
+            "error": null
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "passed",
+        "response_times": {
+            "data_collection": 0.31535840034484863,
+            "ai_prediction": 0.006022214889526367
+        },
+        "memory_usage": {},
+        "error_rates": {},
+        "recommendations": []
+    },
+    "errors": [],
+    "recommendations": [
+        "System validation passed - ready for production",
+        "Monitor system performance in live environment",
+        "Set up automated daily health checks"
+    ]
+}

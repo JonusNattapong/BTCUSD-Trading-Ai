@@ -1,0 +1,77 @@
+{
+    "timestamp": "2025-10-27 15:27:01.388068",
+    "overall_status": "failed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "failed",
+            "error": "'RealTimeDataConnector' object has no attribute 'get_recent_prices'"
+        },
+        "data_collector": {
+            "status": "failed",
+            "data_points": 0,
+            "indicators_calculated": false,
+            "error": null
+        },
+        "ai_trainer": {
+            "status": "failed",
+            "error": "'RealDataAITrainer' object has no attribute 'predict'"
+        },
+        "backtester": {
+            "status": "failed",
+            "backtest_completed": true,
+            "metrics_calculated": false,
+            "error": null
+        },
+        "risk_manager": {
+            "status": "failed",
+            "error": "'RiskManager' object has no attribute 'calculate_var'"
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "failed",
+            "error": "Insufficient data collected"
+        },
+        "risk_integration": {
+            "status": "failed",
+            "error": "unsupported operand type(s) for /: 'tuple' and 'int'"
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "passed",
+        "response_times": {
+            "data_collection": 0.005366325378417969,
+            "ai_prediction": 0.010975360870361328
+        },
+        "memory_usage": {},
+        "error_rates": {},
+        "recommendations": []
+    },
+    "errors": [],
+    "recommendations": [
+        "Fix real_time_data component - 'RealTimeDataConnector' object has no attribute 'get_recent_prices'",
+        "Fix data_collector component - None",
+        "Fix ai_trainer component - 'RealDataAITrainer' object has no attribute 'predict'",
+        "Fix backtester component - None",
+        "Fix risk_manager component - 'RiskManager' object has no attribute 'calculate_var'",
+        "Fix data_flow integration - Insufficient data collected",
+        "Fix risk_integration integration - unsupported operand type(s) for /: 'tuple' and 'int'",
+        "Address all failed tests before production deployment",
+        "Consider additional testing in staging environment"
+    ]
+}

@@ -1,0 +1,15 @@
+\begin{thebibliography}{1}
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter and J{"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural computation}, 9(8):1735--1780, 1997.
+
+\bibitem{zhou2015c}
+Kai Zhou et~al.
+\newblock A deep learning framework for financial time series using
+  convolutional and lstm networks.
+\newblock In {\em Proceedings of the 2015 International Conference on Data
+  Mining}, 2015.
+
+\end{thebibliography}

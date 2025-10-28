@@ -1,0 +1,82 @@
+{
+    "timestamp": "2025-10-27 16:15:59.379898",
+    "overall_status": "failed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "passed",
+            "connection": true,
+            "current_price": 115076.0,
+            "recent_prices_count": 10,
+            "error": null
+        },
+        "data_collector": {
+            "status": "failed",
+            "error": "'HistoricalDataCollector' object has no attribute 'calculate_technical_indicators'"
+        },
+        "ai_trainer": {
+            "status": "failed",
+            "models_initialized": false,
+            "prediction_generated": true,
+            "error": null
+        },
+        "backtester": {
+            "status": "passed",
+            "backtest_completed": true,
+            "metrics_calculated": true,
+            "error": null
+        },
+        "risk_manager": {
+            "status": "passed",
+            "position_size_calculated": true,
+            "var_calculated": true,
+            "health_check_passed": true,
+            "error": null
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "passed",
+            "data_collected": 720,
+            "ai_prediction": true,
+            "backtest_completed": true,
+            "error": null
+        },
+        "risk_integration": {
+            "status": "failed",
+            "error": "'RiskManager' object has no attribute 'get_stop_loss_price'"
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "passed",
+        "response_times": {
+            "data_collection": 0.3215975761413574,
+            "ai_prediction": 0.007401227951049805
+        },
+        "memory_usage": {},
+        "error_rates": {},
+        "recommendations": []
+    },
+    "errors": [],
+    "recommendations": [
+        "Fix data_collector component - 'HistoricalDataCollector' object has no attribute 'calculate_technical_indicators'",
+        "Fix ai_trainer component - None",
+        "Fix risk_integration integration - 'RiskManager' object has no attribute 'get_stop_loss_price'",
+        "Address all failed tests before production deployment",
+        "Consider additional testing in staging environment"
+    ]
+}

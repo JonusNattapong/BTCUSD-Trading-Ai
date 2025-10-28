@@ -1,0 +1,37 @@
+2025-10-27 14:52:07,897 - INFO - Initializing BTCUSD Profit Maximizer system...
+2025-10-27 14:52:12,632 - ERROR - System initialization failed: Found array with 0 sample(s) (shape=(0, 21)) while a minimum of 1 is required by RobustScaler.
+2025-10-27 14:54:03,228 - INFO - Initializing BTCUSD Profit Maximizer demo...
+2025-10-27 14:54:03,348 - INFO - Demo system initialization completed successfully
+2025-10-27 14:54:04,222 - INFO - Demo Day 1 Results: P&L: $181.14, Trades: 4, Win Rate: 100.0%
+2025-10-27 14:54:05,106 - INFO - Demo Day 2 Results: P&L: $129.00, Trades: 1, Win Rate: 100.0%
+2025-10-27 14:54:05,987 - INFO - Demo Day 3 Results: P&L: $54.05, Trades: 1, Win Rate: 100.0%
+2025-10-27 14:54:06,890 - INFO - Demo Day 4 Results: P&L: $300.01, Trades: 4, Win Rate: 100.0%
+2025-10-27 14:54:07,756 - INFO - Demo Day 5 Results: P&L: $97.62, Trades: 4, Win Rate: 100.0%
+2025-10-27 14:56:25,944 - INFO - Initializing BTCUSD Profit Maximizer demo...
+2025-10-27 14:56:26,088 - INFO - Demo system initialization completed successfully
+2025-10-27 14:56:26,938 - INFO - Demo Day 1 Results: P&L: $878.69, Trades: 4, Win Rate: 100.0%
+2025-10-27 14:56:27,773 - INFO - Demo Day 2 Results: P&L: $340.05, Trades: 3, Win Rate: 100.0%
+2025-10-27 14:56:28,630 - INFO - Demo Day 3 Results: P&L: $335.89, Trades: 2, Win Rate: 100.0%
+2025-10-27 14:56:29,501 - INFO - Demo Day 4 Results: P&L: $1716.20, Trades: 6, Win Rate: 100.0%
+2025-10-27 14:56:30,373 - INFO - Demo Day 5 Results: P&L: $354.07, Trades: 2, Win Rate: 100.0%
+2025-10-27 14:57:33,912 - INFO - Initializing BTCUSD Profit Maximizer demo...
+2025-10-27 14:57:34,040 - INFO - Demo system initialization completed successfully
+2025-10-27 14:57:34,922 - INFO - Demo Day 1 Results: P&L: $1.15, Trades: 3, Win Rate: 100.0%
+2025-10-27 14:57:35,777 - INFO - Demo Day 2 Results: P&L: $2.58, Trades: 6, Win Rate: 100.0%
+2025-10-27 14:57:36,640 - INFO - Demo Day 3 Results: P&L: $0.44, Trades: 3, Win Rate: 100.0%
+2025-10-27 14:57:37,524 - INFO - Demo Day 4 Results: P&L: $0.92, Trades: 2, Win Rate: 100.0%
+2025-10-27 14:57:38,405 - INFO - Demo Day 5 Results: P&L: $2.88, Trades: 6, Win Rate: 100.0%
+2025-10-27 14:58:58,809 - INFO - Initializing BTCUSD Profit Maximizer demo...
+2025-10-27 14:58:58,918 - INFO - Demo system initialization completed successfully
+2025-10-27 14:58:59,782 - INFO - Demo Day 1 Results: P&L: $1.61, Trades: 4, Win Rate: 100.0%
+2025-10-27 14:59:00,688 - INFO - Demo Day 2 Results: P&L: $0.10, Trades: 1, Win Rate: 100.0%
+2025-10-27 14:59:01,549 - INFO - Demo Day 3 Results: P&L: $1.29, Trades: 3, Win Rate: 100.0%
+2025-10-27 14:59:02,388 - INFO - Demo Day 4 Results: P&L: $5.76, Trades: 7, Win Rate: 100.0%
+2025-10-27 14:59:03,271 - INFO - Demo Day 5 Results: P&L: $2.16, Trades: 4, Win Rate: 100.0%
+2025-10-27 15:01:32,530 - INFO - Initializing BTCUSD Profit Maximizer demo...
+2025-10-27 15:01:32,647 - INFO - Demo system initialization completed successfully
+2025-10-27 15:01:33,566 - INFO - Demo Day 1 Results: P&L: $1.14, Trades: 2, Win Rate: 100.0%
+2025-10-27 15:01:34,436 - INFO - Demo Day 2 Results: P&L: $2.39, Trades: 6, Win Rate: 100.0%
+2025-10-27 15:01:35,315 - INFO - Demo Day 3 Results: P&L: $1.15, Trades: 3, Win Rate: 100.0%
+2025-10-27 15:01:36,174 - INFO - Demo Day 4 Results: P&L: $1.05, Trades: 2, Win Rate: 100.0%
+2025-10-27 15:01:37,027 - INFO - Demo Day 5 Results: P&L: $1.33, Trades: 5, Win Rate: 100.0%

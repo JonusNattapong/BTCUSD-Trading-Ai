@@ -1,0 +1,67 @@
+{
+    "timestamp": "2025-10-27 15:24:17.496714",
+    "overall_status": "failed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "failed",
+            "error": "'RealTimeDataConnector' object has no attribute 'check_connection'"
+        },
+        "data_collector": {
+            "status": "failed",
+            "error": "'HistoricalDataCollector' object has no attribute 'collect_historical_data'"
+        },
+        "ai_trainer": {
+            "status": "failed",
+            "error": "'RealDataAITrainer' object has no attribute 'check_models_health'"
+        },
+        "backtester": {
+            "status": "failed",
+            "error": "'BacktestingFramework' object has no attribute 'run_backtest'"
+        },
+        "risk_manager": {
+            "status": "failed",
+            "error": "RiskManager.calculate_position_size() got an unexpected keyword argument 'capital'"
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "failed",
+            "error": "'HistoricalDataCollector' object has no attribute 'collect_historical_data'"
+        },
+        "risk_integration": {
+            "status": "failed",
+            "error": "RiskManager.calculate_position_size() got an unexpected keyword argument 'capital'"
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "failed",
+        "error": "'HistoricalDataCollector' object has no attribute 'collect_historical_data'"
+    },
+    "errors": [],
+    "recommendations": [
+        "Fix real_time_data component - 'RealTimeDataConnector' object has no attribute 'check_connection'",
+        "Fix data_collector component - 'HistoricalDataCollector' object has no attribute 'collect_historical_data'",
+        "Fix ai_trainer component - 'RealDataAITrainer' object has no attribute 'check_models_health'",
+        "Fix backtester component - 'BacktestingFramework' object has no attribute 'run_backtest'",
+        "Fix risk_manager component - RiskManager.calculate_position_size() got an unexpected keyword argument 'capital'",
+        "Fix data_flow integration - 'HistoricalDataCollector' object has no attribute 'collect_historical_data'",
+        "Fix risk_integration integration - RiskManager.calculate_position_size() got an unexpected keyword argument 'capital'",
+        "Address all failed tests before production deployment",
+        "Consider additional testing in staging environment"
+    ]
+}

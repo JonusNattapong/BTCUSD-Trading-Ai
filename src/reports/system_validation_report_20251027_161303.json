@@ -1,0 +1,80 @@
+{
+    "timestamp": "2025-10-27 16:13:01.967412",
+    "overall_status": "failed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "passed",
+            "connection": true,
+            "current_price": 114993.7,
+            "recent_prices_count": 10,
+            "error": null
+        },
+        "data_collector": {
+            "status": "failed",
+            "data_points": 0,
+            "indicators_calculated": false,
+            "error": null
+        },
+        "ai_trainer": {
+            "status": "failed",
+            "models_initialized": false,
+            "prediction_generated": true,
+            "error": null
+        },
+        "backtester": {
+            "status": "passed",
+            "backtest_completed": true,
+            "metrics_calculated": true,
+            "error": null
+        },
+        "risk_manager": {
+            "status": "failed",
+            "error": "'>' not supported between instances of 'tuple' and 'int'"
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "failed",
+            "error": "Insufficient data collected"
+        },
+        "risk_integration": {
+            "status": "failed",
+            "error": "'RiskManager' object has no attribute 'assess_portfolio_risk'"
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "passed",
+        "response_times": {
+            "data_collection": 0.015897274017333984,
+            "ai_prediction": 0.009188175201416016
+        },
+        "memory_usage": {},
+        "error_rates": {},
+        "recommendations": []
+    },
+    "errors": [],
+    "recommendations": [
+        "Fix data_collector component - None",
+        "Fix ai_trainer component - None",
+        "Fix risk_manager component - '>' not supported between instances of 'tuple' and 'int'",
+        "Fix data_flow integration - Insufficient data collected",
+        "Fix risk_integration integration - 'RiskManager' object has no attribute 'assess_portfolio_risk'",
+        "Address all failed tests before production deployment",
+        "Consider additional testing in staging environment"
+    ]
+}

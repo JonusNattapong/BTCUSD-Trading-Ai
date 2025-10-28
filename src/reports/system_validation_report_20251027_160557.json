@@ -1,0 +1,82 @@
+{
+    "timestamp": "2025-10-27 15:58:17.812830",
+    "overall_status": "failed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "failed",
+            "connection": true,
+            "current_price": 115010.86,
+            "recent_prices_count": 0,
+            "error": null
+        },
+        "data_collector": {
+            "status": "failed",
+            "data_points": 0,
+            "indicators_calculated": false,
+            "error": null
+        },
+        "ai_trainer": {
+            "status": "failed",
+            "models_initialized": false,
+            "prediction_generated": false,
+            "error": null
+        },
+        "backtester": {
+            "status": "failed",
+            "backtest_completed": true,
+            "metrics_calculated": false,
+            "error": null
+        },
+        "risk_manager": {
+            "status": "failed",
+            "error": "'RiskManager' object has no attribute 'check_health'"
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "failed",
+            "error": "Insufficient data collected"
+        },
+        "risk_integration": {
+            "status": "failed",
+            "error": "unsupported operand type(s) for /: 'tuple' and 'int'"
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "passed",
+        "response_times": {
+            "data_collection": 0.035977840423583984,
+            "ai_prediction": 0.14991545677185059
+        },
+        "memory_usage": {},
+        "error_rates": {},
+        "recommendations": []
+    },
+    "errors": [],
+    "recommendations": [
+        "Fix real_time_data component - None",
+        "Fix data_collector component - None",
+        "Fix ai_trainer component - None",
+        "Fix backtester component - None",
+        "Fix risk_manager component - 'RiskManager' object has no attribute 'check_health'",
+        "Fix data_flow integration - Insufficient data collected",
+        "Fix risk_integration integration - unsupported operand type(s) for /: 'tuple' and 'int'",
+        "Address all failed tests before production deployment",
+        "Consider additional testing in staging environment"
+    ]
+}

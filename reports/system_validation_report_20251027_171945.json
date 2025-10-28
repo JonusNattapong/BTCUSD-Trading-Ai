@@ -1,0 +1,84 @@
+{
+    "timestamp": "2025-10-27 17:19:21.947069",
+    "overall_status": "failed",
+    "component_tests": {
+        "real_time_data": {
+            "status": "passed",
+            "connection": true,
+            "current_price": 115524.24,
+            "recent_prices_count": 10,
+            "error": null
+        },
+        "data_collector": {
+            "status": "passed",
+            "data_points": 168,
+            "indicators_calculated": true,
+            "error": null
+        },
+        "ai_trainer": {
+            "status": "failed",
+            "error": "name 'ai_trainer' is not defined"
+        },
+        "backtester": {
+            "status": "passed",
+            "backtest_completed": true,
+            "metrics_calculated": true,
+            "error": null
+        },
+        "risk_manager": {
+            "status": "passed",
+            "position_size_calculated": true,
+            "var_calculated": true,
+            "health_check_passed": true,
+            "error": null
+        },
+        "capital_manager": {
+            "status": "passed",
+            "capital_updated": true,
+            "metrics_calculated": true,
+            "status_retrieved": true,
+            "error": null
+        }
+    },
+    "integration_tests": {
+        "data_flow": {
+            "status": "failed",
+            "error": "AI prediction failed"
+        },
+        "risk_integration": {
+            "status": "passed",
+            "position_size": 250.0,
+            "risk_assessed": true,
+            "stop_loss_calculated": true,
+            "error": null
+        },
+        "capital_integration": {
+            "status": "passed",
+            "capital_updated": true,
+            "compounding_tested": true,
+            "metrics_calculated": true,
+            "projections_generated": true,
+            "error": null
+        }
+    },
+    "performance_tests": {
+        "status": "warning",
+        "response_times": {
+            "data_collection": 0.5689048767089844,
+            "ai_prediction": 8.2065269947052
+        },
+        "memory_usage": {},
+        "error_rates": {},
+        "recommendations": [
+            "Performance thresholds exceeded - consider optimization"
+        ]
+    },
+    "errors": [],
+    "recommendations": [
+        "Fix ai_trainer component - name 'ai_trainer' is not defined",
+        "Fix data_flow integration - AI prediction failed",
+        "Performance thresholds exceeded - consider optimization",
+        "Address all failed tests before production deployment",
+        "Consider additional testing in staging environment"
+    ]
+}

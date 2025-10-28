@@ -1,0 +1,14 @@
+2025-10-28 09:29:50,469 - INFO - Initializing system components...
+2025-10-28 09:29:50,472 - INFO - Real-time data connector initialized
+2025-10-28 09:29:50,475 - INFO - Historical data collector initialized
+2025-10-28 09:29:50,478 - INFO - AI trainer initialized
+2025-10-28 09:29:50,492 - INFO - Backtesting framework initialized
+2025-10-28 09:29:50,493 - INFO - Risk manager initialized
+2025-10-28 09:29:50,494 - INFO - Capital growth manager initialized
+2025-10-28 09:29:50,494 - INFO - Initializing AI models...
+2025-10-28 09:29:50,546 - INFO - Collecting 365 days of BTCUSDT data from Binance
+2025-10-28 09:29:50,969 - INFO - Retrieved 1000 historical data points for BTCUSDT
+2025-10-28 09:29:51,273 - ERROR - Error getting historical data for BTCUSDT: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1h&limit=1000&startTime=1733709600000.0&endTime=1761643790495
+2025-10-28 09:29:51,320 - INFO - Saved 1000 data points to data\raw\BTCUSDT_1h_365d_raw.csv
+2025-10-28 09:29:51,320 - ERROR - Failed to initialize AI models: 'RealDataAITrainer' object has no attribute 'train_models'
+2025-10-28 09:29:51,320 - INFO - All system components initialized successfully
